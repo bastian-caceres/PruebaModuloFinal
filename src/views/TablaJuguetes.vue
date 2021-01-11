@@ -8,6 +8,7 @@
           <table class="table table-bordered table-dark">
             <thead>
                 <tr>
+                    <th>#</th>
                     <th>Codigo</th>
                     <th>Nombre</th>
                     <th>Precio</th>
@@ -18,6 +19,7 @@
             </thead>
             <tbody>
                 <tr v-for="(item, index) in enviandoJuguetes" :key="index">
+                    <td>{{index+1}}</td>
                     <td>{{item.codigo}}</td>
                     <td>{{item.nombre}}</td>
                     <td>{{item.precio}}</td>

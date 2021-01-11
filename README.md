@@ -1,6 +1,8 @@
 <<<<<<< HEAD
 # pruebafinalmodulo
-
+https://prueba-otto-klaus-392ad.web.app/
+user: bast.caceresr@gmail.com
+pass:123456
 ## Project setup
 ```
 npm install

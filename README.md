@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # pruebafinalmodulo
 
 ## Project setup
@@ -22,3 +23,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# PruebaModuloFinal
+>>>>>>> e6befbf605f7ecdc22530b46d205c76e72584f30

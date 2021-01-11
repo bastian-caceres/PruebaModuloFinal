@@ -96,7 +96,7 @@ export default {
     },
     methods: {
         agregandoJuguete(){
-            if (this.codigo.length >= 5 && this.nombre.length >= 4 && this.stock && this.precio && this.img ) {
+            if (this.codigo.length >= 5 && this.nombre.length >= 4 && this.stock >= 0 && this.precio >= 0 && this.img ) {
                 let datos = {
                     codigo: this.codigo,
                     nombre: this.nombre,
@@ -122,7 +122,7 @@ export default {
                 Swal.fire({
                     icon: 'error',
                     title: 'No se puede agregar el juguete',
-                    text: "por favor complete todos los campos!",
+                    text: "por favor complete todos los campos! (no se permiten numeros negativos)",
                     showConfirmButton: false,
                     timer: 2500
                 })

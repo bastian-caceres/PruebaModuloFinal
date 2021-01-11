@@ -59,7 +59,7 @@ export default {
     },
     methods: {
         actualizarJuguete(){
-            if (this.codigo && this.nombre && this.stock && this.precio && this.img) {
+            if (this.codigo && this.nombre && this.stock >= 0 && this.precio >= 0 && this.img) {
                 let datos = {
                     codigo: this.codigo,
                     nombre: this.nombre,
@@ -80,6 +80,13 @@ export default {
                 },1000);
             } else {
                 console.log("No se puede actualizar el juguete");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'error al editar el Jueguete',
+                    text: "por favor complete todos los campos! (no se permiten numeros negativos)",
+                    showConfirmButton: false,
+                    timer: 2500
+                })
             }
         }
     },

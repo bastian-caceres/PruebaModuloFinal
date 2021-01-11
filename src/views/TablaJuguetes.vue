@@ -124,7 +124,7 @@ export default {
                     title: 'No se puede agregar el juguete',
                     text: "por favor complete todos los campos! (no se permiten numeros negativos)",
                     showConfirmButton: false,
-                    timer: 2500
+                    timer: 4000
                 })
                 this.codigo =''
                 this.nombre =''

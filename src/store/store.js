@@ -17,6 +17,9 @@ export default new Vuex.Store({
     enviandoJuguetes(state){
       return state.juguetes;
     },
+    enviandoJuguetesFiltrado(state){
+      return state.juguetes.filter(result => result.stock > 0 && result.precio > 0);
+    },
   },
   mutations: {
     mutarUser(state,datoUser){

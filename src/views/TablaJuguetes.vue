@@ -5,7 +5,7 @@
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#agregarjuguete"><font-awesome-icon icon="plus"/> Agregar Juguete</button>
         </div>
         <div v-if="enviandoJuguetes.length > 0">
-          <table class="table table-bordered table-dark">
+          <table class="table table-responsive table-bordered table-dark">
             <thead>
                 <tr>
                     <th>#</th>
